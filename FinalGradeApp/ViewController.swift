@@ -81,7 +81,7 @@ class ViewController: UIViewController
         finalGrade.text = String (format : "%.1f" ,examEquation)
         finalGrade.textColor = UIColor.black
         
-            if examEquation > Double(100.0)
+        if examEquation > Double(100.0)
         {
             view.backgroundColor = UIColor.red
             indicateText.text = "Ask teacher for extra credit"
@@ -247,5 +247,8 @@ class ViewController: UIViewController
         desiredGrade.layer.cornerRadius = 5.0
     }
 
+    
+    
+    
 }
 

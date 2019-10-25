@@ -91,7 +91,7 @@ class ViewController: UIViewController
             
         if examEquation < 0
         {
-            view.backgroundColor = .blue
+            view.backgroundColor = UIColor.blue
             indicateText.text = " "
             overGradeAlert()
         }

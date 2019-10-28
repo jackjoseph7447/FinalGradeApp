@@ -17,6 +17,9 @@ class ViewController: UIViewController
     @IBOutlet weak var finalGrade: UILabel!
     @IBOutlet weak var indicateText: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var midtermGrade: UITextField!
+    @IBOutlet weak var finalTextGrade: UITextField!
+    @IBOutlet weak var weightOfMidterm: UISegmentedControl!
     
     
     var Q1 : Double = 0

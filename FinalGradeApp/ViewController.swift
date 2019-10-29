@@ -18,14 +18,15 @@ class ViewController: UIViewController
     @IBOutlet weak var indicateText: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var midtermGrade: UITextField!
-    @IBOutlet weak var finalTextGrade: UITextField!
     @IBOutlet weak var weightOfMidterm: UISegmentedControl!
+    @IBOutlet weak var finalWeight: UITextField!
     
     
     var Q1 : Double = 0
     var Q2 : Double = 0
     var Dgrade : Double = 0
-    
+    var midtermWeightPercent : Double = 0
+    var finalWeightPercent : Double = 0
     
     
     
@@ -71,6 +72,8 @@ class ViewController: UIViewController
     {
         Q1 = Double (qOneGrade.text ?? "") ?? 0
         Q2 = Double (qTwoGrade.text ?? "") ?? 0
+        midtermWeightPercent = Double (midtermGrade.text ?? "") ?? 0
+        finalWeightPercent = Double (finalWeight.text ?? "") ?? 0
         
         if qOneGrade.text == "" || qTwoGrade.text == ""
         {

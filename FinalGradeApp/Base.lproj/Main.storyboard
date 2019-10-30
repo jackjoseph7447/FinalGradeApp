@@ -49,15 +49,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fO0-ob-E6T">
-                                        <rect key="frame" x="30.5" y="168" width="254" height="34"/>
+                                        <rect key="frame" x="24" y="168" width="267" height="34"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Final" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSe-bN-qWu">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Midterm Weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSe-bN-qWu">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight of Final" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOX-Aw-m2c">
-                                                <rect key="frame" x="129.5" y="0.0" width="124.5" height="34"/>
+                                                <rect key="frame" x="136" y="0.0" width="131" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -117,7 +117,7 @@
                         <outlet property="qOneGrade" destination="rwg-Ca-GAM" id="Abz-QC-riY"/>
                         <outlet property="qTwoGrade" destination="puF-9v-6WU" id="bRZ-cC-sss"/>
                         <outlet property="segmentedControl" destination="DOR-os-y4z" id="Pw6-EP-WNO"/>
-                        <outlet property="weightOfMidterm" destination="DOR-os-y4z" id="HgI-rl-DHO"/>
+                        <outlet property="weightMidterm" destination="BSe-bN-qWu" id="Ln8-Dp-oRI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

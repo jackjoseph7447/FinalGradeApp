@@ -18,9 +18,7 @@ class ViewController: UIViewController
     @IBOutlet weak var indicateText: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var midtermGrade: UITextField!
-    //@IBOutlet weak var weightOfMidterm: UISegmentedControl!
-    @IBOutlet weak var finalWeight: UITextField!
-    @IBOutlet weak var weightMidterm: UITextField!
+    
     
     
     var Q1 : Double = 0
@@ -74,9 +72,8 @@ class ViewController: UIViewController
         Q1 = Double (qOneGrade.text ?? "") ?? 0
         Q2 = Double (qTwoGrade.text ?? "") ?? 0
         midtermWeightPercent = Double (midtermGrade.text ?? "") ?? 0
-        finalWeightPercent = Double (finalWeight.text ?? "") ?? 0
         
-        if qOneGrade.text == "" || qTwoGrade.text == ""
+        if qOneGrade.text == "" || qTwoGrade.text == "" //|| //midtermGrade.text == ""
         {
             self.errorWarning()
         }
@@ -127,8 +124,7 @@ class ViewController: UIViewController
         quarterTwoDesign()
         desiredGradeDesign()
         midtermDesign()
-        midtermWeightDesign()
-        finalDesign()
+       
     }
     
     @objc func dismissKeyboard()
@@ -263,19 +259,7 @@ class ViewController: UIViewController
         midtermGrade.layer.cornerRadius = 5.0
     }
     
-    func midtermWeightDesign()
-    {
-        weightMidterm.layer.borderColor = UIColor.red.cgColor
-        weightMidterm.layer.borderWidth = 3.0
-        weightMidterm.layer.cornerRadius = 5.0
-    }
     
-    func finalDesign()
-    {
-        finalWeight.layer.borderColor = UIColor.red.cgColor
-        finalWeight.layer.borderWidth = 3.0
-        finalWeight.layer.cornerRadius = 5.0
-    }
     
 }
 

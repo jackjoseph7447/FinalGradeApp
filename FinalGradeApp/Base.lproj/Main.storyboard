@@ -15,56 +15,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="YRz-nR-O9r">
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="YRz-nR-O9r">
                                 <rect key="frame" x="30" y="30" width="315" height="607"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8ft-52-GVS">
-                                        <rect key="frame" x="27" y="0.0" width="261" height="34"/>
+                                        <rect key="frame" x="27" y="0.0" width="261" height="31"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Q1 Grade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rwg-Ca-GAM">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Q2 Grade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puF-9v-6WU">
-                                                <rect key="frame" x="133" y="0.0" width="128" height="34"/>
+                                                <rect key="frame" x="133" y="0.0" width="128" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="67h-Q8-DIk">
-                                        <rect key="frame" x="0.0" y="84" width="315" height="34"/>
+                                        <rect key="frame" x="0.0" y="101" width="315" height="31.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Midterm" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGc-dv-kMi">
-                                                <rect key="frame" x="0.0" y="0.0" width="155" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="155" height="31.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Desired Grade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OhM-Gw-gKp">
-                                                <rect key="frame" x="160" y="0.0" width="155" height="34"/>
+                                                <rect key="frame" x="160" y="0.0" width="155" height="31.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fO0-ob-E6T">
-                                        <rect key="frame" x="24" y="168" width="267" height="34"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Midterm Weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSe-bN-qWu">
-                                                <rect key="frame" x="0.0" y="0.0" width="131" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight of Final" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOX-Aw-m2c">
-                                                <rect key="frame" x="136" y="0.0" width="131" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="DOR-os-y4z">
-                                        <rect key="frame" x="10.5" y="252" width="294" height="32"/>
+                                        <rect key="frame" x="10.5" y="202.5" width="294" height="29"/>
                                         <segments>
                                             <segment title="A (93)"/>
                                             <segment title="B (83)"/>
@@ -77,20 +62,20 @@
                                         </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMR-Og-8Ug">
-                                        <rect key="frame" x="125.5" y="333" width="64" height="30"/>
+                                        <rect key="frame" x="125.5" y="300.5" width="64" height="27.5"/>
                                         <state key="normal" title="Calculate"/>
                                         <connections>
                                             <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4bh-cb-Nkf"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te9-WQ-0ms">
-                                        <rect key="frame" x="136.5" y="413" width="42" height="20.5"/>
+                                        <rect key="frame" x="136.5" y="398" width="42" height="19"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtf-yw-8hJ">
-                                        <rect key="frame" x="0.0" y="483.5" width="315" height="123.5"/>
+                                        <rect key="frame" x="0.0" y="487" width="315" height="120"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -111,13 +96,11 @@
                     <connections>
                         <outlet property="desiredGrade" destination="OhM-Gw-gKp" id="6WN-VW-4sq"/>
                         <outlet property="finalGrade" destination="te9-WQ-0ms" id="XsJ-Rs-xc2"/>
-                        <outlet property="finalWeight" destination="YOX-Aw-m2c" id="Svq-vB-Vag"/>
                         <outlet property="indicateText" destination="rtf-yw-8hJ" id="gKc-Q3-LIQ"/>
                         <outlet property="midtermGrade" destination="UGc-dv-kMi" id="7P2-BT-pHG"/>
                         <outlet property="qOneGrade" destination="rwg-Ca-GAM" id="Abz-QC-riY"/>
                         <outlet property="qTwoGrade" destination="puF-9v-6WU" id="bRZ-cC-sss"/>
                         <outlet property="segmentedControl" destination="DOR-os-y4z" id="Pw6-EP-WNO"/>
-                        <outlet property="weightMidterm" destination="BSe-bN-qWu" id="Ln8-Dp-oRI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

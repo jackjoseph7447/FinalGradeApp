@@ -24,8 +24,7 @@ class ViewController: UIViewController
     var Q1 : Double = 0
     var Q2 : Double = 0
     var Dgrade : Double = 0
-    var midtermWeightPercent : Double = 0
-    var finalWeightPercent : Double = 0
+    var midtermPercent : Double = 0
     
     
     
@@ -71,7 +70,7 @@ class ViewController: UIViewController
     {
         Q1 = Double (qOneGrade.text ?? "") ?? 0
         Q2 = Double (qTwoGrade.text ?? "") ?? 0
-        midtermWeightPercent = Double (midtermGrade.text ?? "") ?? 0
+        midtermPercent = Double (midtermGrade.text ?? "") ?? 0
         
         if qOneGrade.text == "" || qTwoGrade.text == "" //|| //midtermGrade.text == ""
         {
@@ -80,8 +79,12 @@ class ViewController: UIViewController
         else
         {
         Dgrade = Double (desiredGrade)
+        //midtermPercent = Double (midtermGrade)
         let examEquation : Double = (5 * (Dgrade - (0.4) * Q1 - (0.4) * Q2))
-        
+        // (0.4*60+0.4*80+0.1*90) (80-ans) (ans/0.1)
+            
+            // ((0.4) * Q1 + (0.4) * Q2 + (0.1) * MidtermGrade)
+            //(80 - ((
         finalGrade.text = String (format : "%.1f" ,examEquation)
         finalGrade.textColor = UIColor.black
         

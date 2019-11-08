@@ -81,10 +81,12 @@ class ViewController: UIViewController
         Dgrade = Double (desiredGrade)
         //midtermPercent = Double (midtermGrade)
         let examEquation : Double = (5 * (Dgrade - (0.4) * Q1 - (0.4) * Q2))
-        // (0.4*60+0.4*80+0.1*90) (80-ans) (ans/0.1)
-            
+        // (0.4*60+0.4*80+0.1*90) = A
+        // (80-A) = B
+        // (B/0.1) = examEquation
+    
             // ((0.4) * Q1 + (0.4) * Q2 + (0.1) * MidtermGrade)
-            //(80 - ((
+            
         finalGrade.text = String (format : "%.1f" ,examEquation)
         finalGrade.textColor = UIColor.black
         

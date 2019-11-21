@@ -53,6 +53,7 @@ class ViewController: UIViewController
         if sender.isOn == false
         {
             midtermGrade.isEnabled = false
+            midtermGrade.text = ""
         }
     
         else

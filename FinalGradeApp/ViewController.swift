@@ -18,6 +18,10 @@ class ViewController: UIViewController
     @IBOutlet weak var indicateText: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var midtermGrade: UITextField!
+    @IBOutlet weak var qOneLabel: UILabel!
+    @IBOutlet weak var qTwoLabel: UILabel!
+    @IBOutlet weak var midtermLabel: UILabel!
+    @IBOutlet weak var wantedLabel: UILabel!
     
     
     
@@ -44,6 +48,19 @@ class ViewController: UIViewController
         
     }
     
+    @IBAction func midtermSwitch(_ sender: UISwitch)
+    {
+        if sender.isOn == false
+        {
+            midtermGrade.isEnabled = false
+        }
+    
+        else
+        {
+            midtermGrade.isEnabled = true
+        }
+    }
+    
     @IBAction func indexChanged(_ sender: UISegmentedControl)
     {
 
@@ -68,6 +85,7 @@ class ViewController: UIViewController
     
     func computeExamGrade (desiredGrade : Double)
     {
+        var examEquation : Double = 0
         Q1 = Double (qOneGrade.text ?? "") ?? 0
         Q2 = Double (qTwoGrade.text ?? "") ?? 0
         midtermPercent = Double (midtermGrade.text ?? "") ?? 0
@@ -79,13 +97,18 @@ class ViewController: UIViewController
         else
         {
         Dgrade = Double (desiredGrade)
-        //midtermPercent = Double (midtermGrade)
-        let examEquation : Double = (5 * (Dgrade - (0.4) * Q1 - (0.4) * Q2))
-        // (0.4*60+0.4*80+0.1*90) = A
-        // (80-A) = B
-        // (B/0.1) = examEquation
-    
-            // ((0.4) * Q1 + (0.4) * Q2 + (0.1) * MidtermGrade)
+        
+            if midtermGrade.isEnabled == true
+            {
+                examEquation = (10 * (Dgrade - (0.4) * Q1 - (0.4) * Q2 - (0.1) * midtermPercent))
+            }
+            
+            else if midtermGrade.isEditing == false
+            {
+                examEquation = (5 * (Dgrade - (0.4) * Q1 - (0.4) * Q2))
+            }
+        
+            
             
         finalGrade.text = String (format : "%.1f" ,examEquation)
         finalGrade.textColor = UIColor.black
@@ -129,6 +152,9 @@ class ViewController: UIViewController
         quarterTwoDesign()
         desiredGradeDesign()
         midtermDesign()
+        
+        qOneLabel.text = "Q1 Grade"
+        qTwoLabel.text = "Q2 Grade"
        
     }
     
@@ -170,6 +196,7 @@ class ViewController: UIViewController
         myAlert.addAction(okAction)
         self.present(myAlert, animated: true, completion: nil)
     }
+    
     
     func defaultA()
     {

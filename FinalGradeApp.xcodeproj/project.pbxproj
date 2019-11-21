@@ -12,6 +12,7 @@
 		421B266922369AD800FBE6E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421B266722369AD800FBE6E3 /* Main.storyboard */; };
 		421B266B22369ADA00FBE6E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421B266A22369ADA00FBE6E3 /* Assets.xcassets */; };
 		421B266E22369ADA00FBE6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421B266C22369ADA00FBE6E3 /* LaunchScreen.storyboard */; };
+		422F19412375DFB70007E717 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F19402375DFB70007E717 /* AboutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		421B266A22369ADA00FBE6E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421B266D22369ADA00FBE6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		421B266F22369ADA00FBE6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		422F19402375DFB70007E717 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				421B266322369AD800FBE6E3 /* AppDelegate.swift */,
 				421B266522369AD800FBE6E3 /* ViewController.swift */,
 				421B266722369AD800FBE6E3 /* Main.storyboard */,
+				422F19402375DFB70007E717 /* AboutVC.swift */,
 				421B266A22369ADA00FBE6E3 /* Assets.xcassets */,
 				421B266C22369ADA00FBE6E3 /* LaunchScreen.storyboard */,
 				421B266F22369ADA00FBE6E3 /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				421B266622369AD800FBE6E3 /* ViewController.swift in Sources */,
 				421B266422369AD800FBE6E3 /* AppDelegate.swift in Sources */,
+				422F19412375DFB70007E717 /* AboutVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MR4SWSSTV6;
 				INFOPLIST_FILE = FinalGradeApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MR4SWSSTV6;
 				INFOPLIST_FILE = FinalGradeApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
